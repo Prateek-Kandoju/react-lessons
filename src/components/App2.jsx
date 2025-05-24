@@ -1,4 +1,3 @@
-
 import "./App2.css";
 import Product from "./Product";
 export default function App2() {

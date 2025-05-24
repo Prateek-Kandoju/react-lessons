@@ -1,18 +1,16 @@
-import React from 'react';
-import './App6.css';
-
-function App6() {
+import React from "react";
+import Fruit from "./Fruit";
+export default function App6() {
   return (
     <div>
-      <h1 className="heading">This is App6 Component</h1>
-      <div className="box-container">
-        <div className="box">Apple</div>
-        <div className="box">Mango</div>
-        <div className="box">Orange</div>
-        <div className="box">Banana</div>
+      <h1>App6</h1>
+      <h2>Assigment</h2>
+      <div style={{display:'flex',flexWrap:'wrap'}}>
+        <Fruit name="Apple" />
+        <Fruit name="Orange" />
+        <Fruit name="Mango" />
+        <Fruit name="Banana" />
       </div>
     </div>
   );
 }
-
-export default App6;
