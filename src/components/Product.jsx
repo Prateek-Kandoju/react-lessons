@@ -1,13 +1,11 @@
-export default function Product(props) {
-  if (!props.value) {
-    return <div>Loading...</div>; // or return null;
-  }
+import React from "react";
 
+export default function Product({ product, onAdd }) {
   return (
-    <div>
-      <h3>{props.value.name}</h3>
-      <h3>{props.price}</h3>
-      <button>button</button>
+    <div className="App-Product-Box">
+      <h2>{product.name}</h2>
+      <h3>${product.price}</h3>
+      <button onClick={() => onAdd(product)}>Add to Cart</button>
     </div>
   );
 }
