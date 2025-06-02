@@ -8,7 +8,7 @@ function App19()
         if(wicket<11)
         {
             setRun(run+1);
-            setMessage("Well done boy!..");
+            setMessage("Well done!..");
         }
     }
     const wickets=()=>{
@@ -16,7 +16,7 @@ function App19()
         {
             const x=wicket+1;
             setWicket(x);
-            if(x==11)
+            if(x==10)
             {
                 setMessage("Game over");
             }
@@ -26,7 +26,7 @@ function App19()
             }
         }
     }
-    return(
+    return(  
         <div>
         <h1>Cricket Scoreboard</h1>
       <div >
